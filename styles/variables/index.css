@@ -35,8 +35,8 @@
   --category-bg: #e6f1fc;
 }
 [data-theme="dark"] {
-  --primary-bg: #1e272e;
-  --secondary-bg: #2b343b;
+  --primary-bg: #243e52;
+  --secondary-bg: #000000;
   --card-bg: #1e272e;
   --skeleton-bg: #172029;
   --black: #fff;
