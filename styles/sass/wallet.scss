@@ -1,0 +1,138 @@
+.add-wallet-wrapper {
+    .add-wallet {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 44px;
+        gap: 32px;
+
+        .wallet-amount {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 521px;
+            height: 136px;
+            background: var(--card-bg);
+            border-radius: 10px;
+
+            span {
+                position: absolute;
+                left: 20px;
+                top: 13px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: -0.01em;
+                color: var(--black);
+            }
+
+            strong {
+                font-weight: 400;
+                font-size: 80px;
+                line-height: 80px;
+                letter-spacing: -0.01em;
+                color: var(--black-02);
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
+        }
+
+        .add-wallet-form {
+            width: 100%;
+
+            .expire,
+            .cvc {
+                width: 192px;
+                margin-bottom: 0;
+
+                @media (max-width: 768px) {
+                    width: 50%;
+                }
+            }
+
+            .card-number,
+            .card-name {
+                width: 400px;
+                margin-bottom: 16px;
+
+                @media (max-width: 1024px) {
+                    width: 100%;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .row {
+                    &:first-child {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.wallet-history {
+    background: var(--secondary-bg);
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding: 30px;
+
+    .history-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 28px 0;
+        border-bottom: 1px solid #E6E6E6;
+        cursor: pointer;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .item-data {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: -0.5px;
+            color: var(--black);
+
+            &.income {
+                color: #61DC00;
+            }
+
+            &.expense {
+                color: #ED233C;
+            }
+
+            @media (max-width: 768px) {
+                width: 50%;
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 15px 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 22px 12px;
+    }
+}

@@ -1,0 +1,116 @@
+.ReactModalPortal {
+
+    .ReactModal__Content {
+        position: relative;
+        background: var(--secondary-bg) !important;
+        margin: auto auto;
+        width: 70vw;
+        height: max-content;
+        border-radius: 15px !important;
+        padding-bottom: 10px !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+
+        @media (max-width: 768px) {
+            margin: 0 auto;
+            width: 90vw;
+            inset: 10px !important;
+        }
+
+        @media (min-width: 768px) and (max-width: 1366px) {
+            width: 90vw;
+            inset: 10px !important;
+        }
+
+        .close-modal {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            cursor: pointer !important;
+            z-index: 99;
+            color: var(--black);
+        }
+    }
+
+    .ReactModal__Overlay {
+        z-index: 102;
+        background: rgba($color: #000000, $alpha: 0.2) !important;
+    }
+}
+
+.submit-modal {
+    margin-top: 10dvh !important;
+    width: 25dvw !important;
+    height: 500px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        width: 90dvw !important;
+    }
+
+    @media (min-width: 768px) and (max-width: 1440px) {
+        width: 50dvw !important;
+    }
+
+}
+
+.submit-modal-content {
+    .be-seller-status {
+        width: 100%;
+        height: calc(100vh - 186px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 140px;
+
+            border-radius: 50%;
+            margin-bottom: 18px;
+
+            &.new {
+                background: rgba($color: #ffb800, $alpha: 0.1);
+            }
+
+            &.approved {
+                background: rgba($color: #61dc00, $alpha: 0.1);
+            }
+
+            &.rejected {
+                background: rgba($color: #ef233c, $alpha: 0.1);
+            }
+        }
+
+        .title {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: var(--black);
+        }
+    }
+
+}
+
+.submit-btn-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+}

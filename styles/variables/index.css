@@ -1,0 +1,58 @@
+:root {
+  --primary-bg: #f4f4f4;
+  --secondary-bg: #fff;
+  --card-bg: #f8f8f8;
+  --skeleton-bg: #ececec;
+  --black: #000;
+  --black-06: rgba(0, 0, 0, 0.06);
+  --black-02: rgba(0, 0, 0, 0.2);
+  --white: #fff;
+  --primary-box-shadow: rgba(165, 165, 165, 0.25);
+  --primary-border: rgba(220, 220, 220, 0.79);
+  --secondary-black: #141414;
+  --dark-blue: #232b2f;
+  --secondary-text: #898989;
+  --form-item-border: rgba(230, 230, 230, 1);
+  --slider-bg: rgba(230, 230, 230, 0.6);
+  --store-footer: rgba(220, 220, 220, 0.79);
+  --link-border: #f0f0f0;
+  --linear: linear-gradient(
+    4deg,
+    #fff 0%,
+    #f2f2f2 10%,
+    rgba(244, 244, 244, 0.3) 65%
+  );
+  --shop-border: rgba(0, 0, 0, 0.1);
+  --menubg: #e6f7ff;
+  --background: #fafafb;
+  --primary: #3e79f7;
+  --border-color: #e6ebf1;
+  --grey: #ededed;
+  --chat-date: rgba(164, 164, 164, 0.46);
+  --chat-bg: #f3f3f0;
+  --curier-sms-bg: #f0f2f5;
+  --user-sms-bg: #fff;
+  --category-bg: #e6f1fc;
+}
+[data-theme="dark"] {
+  --primary-bg: #1e272e;
+  --secondary-bg: #2b343b;
+  --card-bg: #1e272e;
+  --skeleton-bg: #172029;
+  --black: #fff;
+  --black-06: rgba(255, 255, 255, 0.06);
+  --black-02: #95999d;
+  --white: #000;
+  --primary-box-shadow: rgba(16, 22, 27, 0.65);
+  --primary-border: rgba(149, 153, 157, 1);
+  --dark-blue: #f4f5f8;
+  --secondary-black: #f4f5f8;
+  --secondary-text: #898989;
+  --form-item-border: rgba(73, 75, 77, 1);
+  --slider-bg: rgba(149, 153, 157, 0.6);
+  --store-footer: rgba(66, 66, 66, 0.79);
+  --link-border: #494b4d;
+  --linear: linear-gradient(4deg, #1e272e 0%, #1e272e 0%, #1e272e 65%);
+  --shop-border: rgba(250, 250, 250, 0.15);
+  --category-bg: #1e272e;
+}

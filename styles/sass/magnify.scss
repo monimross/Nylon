@@ -1,0 +1,92 @@
+.img-magnify {
+    display: flex;
+    justify-content: flex-start;
+    width: max-content;
+
+    .swiper-lg {
+        width: 820px;
+        height: 550px;
+
+        .swiper-slide {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: var(--secondary-bg);
+
+            img {
+                width: 402px;
+                height: 550px !important;
+                border-radius: 10px;
+                object-fit: contain;
+
+                @media (max-width: 360px) {
+                    width: 305px !important;
+                }
+
+                @media (max-width: 768px) {
+                    width: 321px;
+                    height: 420px !important;
+                    border-radius: 8px;
+                }
+            }
+
+        }
+
+        @media (max-width: 960px) {
+            width: 321px;
+            height: 420px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (min-width: 960px) and (max-width: 1360px) {
+            width: 400px;
+        }
+    }
+
+    .swiper-sm {
+        width: 40px;
+        height: 550px;
+        margin-right: 17px;
+
+        .swiper-slide {
+            border-radius: 10px;
+            height: 40px !important;
+            cursor: pointer;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            @media (max-width: 375px) {
+                width: 30px !important;
+            }
+
+            @media (min-width: 375px) and (max-width: 960px) {
+                width: 40px !important;
+            }
+        }
+
+        @media (max-width: 375px) {
+            width: 300px;
+            height: 40px;
+            margin-top: 17px;
+        }
+
+        @media (min-width: 375px) and (max-width: 960px) {
+            width: 321px;
+            height: 40px;
+            margin-top: 17px;
+        }
+
+    }
+
+    @media (max-width: 960px) {
+        width: 100% !important;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}

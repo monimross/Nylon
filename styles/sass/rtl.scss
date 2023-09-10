@@ -1,0 +1,125 @@
+[dir="rtl"] {
+    .filter-links {
+        .suffix {
+            transform: rotate(180deg);
+        }
+    }
+
+    .select-address {
+        flex-direction: row-reverse;
+    }
+
+    .navbar {
+        .left {
+            gap: 20px;
+        }
+    }
+
+    .user {
+        .dropdown {
+            right: -400%;
+        }
+    }
+
+    .notification-wrapper {
+        .notification {
+            right: -568%;
+
+            .item {
+                .header {
+                    span {
+                        left: 24px;
+                        right: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    .filter-wrapper {
+        .btn-view {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .app-banner {
+        .app-banner-laptop {
+            left: 90px;
+            right: unset;
+        }
+
+        .banner-content {
+            width: max-content;
+            right: 30px;
+            left: 0;
+
+            @media (max-width: 768px) {
+                right: 14px
+            }
+        }
+    }
+
+    .breadcrumb {
+        .go-back {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .tabs {
+        .tab {
+            gap: 12px;
+        }
+    }
+
+    .form-item {
+        .suffix {
+            left: 20px;
+            right: unset;
+        }
+    }
+
+    .option {
+        .option-item {
+            .status {
+                margin-right: 0;
+                margin-left: 19px;
+            }
+        }
+    }
+
+    .location-card {
+        .card-header {
+            .edit-btn {
+                left: 10px;
+                right: unset;
+                margin-left: 0;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .by-price {
+        .price-rage {
+            flex-direction: row-reverse;
+        }
+
+        .slider {
+            margin-right: 10%;
+        }
+    }
+
+    .nav-links {
+        .link {
+            .suffix {
+                right: unset;
+                left: 20px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .method-icon {
+        right: unset;
+        left: 29px;
+    }
+}

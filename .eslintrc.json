@@ -1,0 +1,6 @@
+{
+  "extends": "next/core-web-vitals",
+  "react/no-unescaped-entities": 0,
+  "@next/next/no-img-element": "off",
+  "jsx-a11y/img-has-alt": [0]
+}

@@ -1,0 +1,277 @@
+.auth-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: var(--secondary-bg);
+    border-radius: 10px;
+    margin-bottom: 17px;
+
+    .logo {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--black);
+
+    }
+
+    .auth-btn-side {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .label {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: right;
+            letter-spacing: -0.02em;
+            color: var(--black);
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+
+        .btn-auth {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 11px 23px;
+            color: var(--black);
+
+            @media (max-width: 768px) {
+                padding: 10px 22px;
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            gap: 11px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 9px 12px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+}
+
+.authentication {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 17px;
+
+    .auth-form {
+        position: relative;
+        width: 450px;
+        min-height: calc(100vh - 125px);
+        background: var(--secondary-bg);
+        border-radius: 10px;
+        padding: 30px;
+        padding-bottom: 20px;
+
+        .title {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 36px;
+            letter-spacing: -0.02em;
+
+            color: var(--black);
+            margin-top: 12px;
+
+            @media (max-width: 768px) {
+                margin-top: 0px;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        .sign-up-form {
+            margin-bottom: 24px;
+
+            button {
+                margin-top: 30px;
+            }
+
+            .forget {
+                text-align: right;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: -0.02em;
+                color: var(--black);
+                cursor: pointer;
+            }
+        }
+
+        form {
+            margin-top: 24px;
+
+            .privacy {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 128px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: -0.01em;
+                color: var(--black);
+
+                span {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                    line-height: 16px;
+                    margin-bottom: 62px;
+                }
+            }
+
+            .form-item {
+                width: 100%;
+            }
+
+            button {
+                max-width: 100%;
+                height: 50px;
+
+                @media (max-width: 768px) {
+                    height: 46px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                margin-top: 26px;
+            }
+        }
+
+        .auth-social {
+            position: sticky;
+            top: 100%;
+            bottom: 0px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .social-item {
+                height: 50px;
+                width: 50px;
+                border: 1px solid var(--form-item-border);
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--black);
+                cursor: pointer;
+
+                &.google {
+                    width: 250px;
+                    gap: 7px;
+
+                    span {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 22px;
+                        letter-spacing: -0.01em;
+                        color: var(--black);
+
+                        @media (max-width: 768px) {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        width: 211px;
+
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    height: 46px;
+                    width: 46px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                gap: 9px;
+                bottom: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            padding: 20px 12px;
+            min-height: 763px;
+        }
+    }
+
+    .auth-banner {
+        width: calc(100% - 467px);
+        min-height: calc(100vh - 125px);
+        border-radius: 10px;
+        max-height: 816px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-height: 816px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.confirm {
+    .sent-gmail {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.01em;
+        color: var(--black);
+        margin-top: 19px;
+        margin-bottom: 108px;
+
+        @media (max-width: 768px) {
+            line-height: 19px;
+            margin-bottom: 74px;
+            margin-top: 12px;
+        }
+    }
+
+    .btn-group {
+        margin-top: 100px;
+
+        .confirm-btn {
+            min-width: 264px;
+
+            @media (max-width: 768px) {
+                min-width: 214px;
+                height: 46px;
+            }
+        }
+
+        button {
+            height: 50px;
+
+            @media (max-width: 768px) {
+                height: 46px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 70px;
+        }
+    }
+}

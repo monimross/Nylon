@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+
+body {
+  background: var(--primary-bg);
+  font-family: 'Inter', sans-serif;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.ReactModal__Body--open {
+    overflow: hidden;
+  }
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.d-none {
+  display: none;
+}
+
+.bg-white {
+  background: var(--secondary-bg) !important;
+
+  span,
+  svg {
+    color: var(--black) !important;
+  }
+}
+
+.mt-17 {
+  margin-top: 17px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .col-md-4 {
+    width: calc((100% - 32px) / 3);
+
+    .form-item {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .col-md-3 {
+    width: calc((100% - 48px) / 4);
+
+    .form-item {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .col-md-12 {
+    width: 100%;
+
+    .form-item {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  max-width: 175px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -1px;
+  gap: 10px;
+
+  a {
+    color: var(--white);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  &[disabled] {
+    opacity: 0.6;
+  }
+
+  &[data-loader="true"] {
+    svg {
+      animation-name: loading;
+      animation-duration: 700ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+
+  &[data-loader="false"] {
+    svg {
+      display: none;
+    }
+  }
+
+  @keyframes loading {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.Toastify {
+  button {
+    width: auto;
+    height: auto;
+  }
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.btn-dark {
+  background: var(--black);
+  border: 1px solid transparent;
+  color: var(--white);
+}
+
+.btn-default {
+  border: 1px solid var(--black);
+  background: transparent;
+  color: var(--black);
+}
+
+.btn-success {
+  background: #61dc00;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: var(--card-bg);
+  color: var(--black);
+}
+
+.btn-danger {
+  background: #ef233c;
+  color: #fff;
+}
+
+.container-full {
+  width: 100%;
+
+  .section-content {
+    overflow-y: hidden;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 18px 15px;
+  height: 100%;
+
+  @media (max-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 576px) and(max-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: all ease-in-out 0.3s;
+
+}
+
+.google-map {
+  max-width: 1440px;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.map-wrapper {
+  position: relative;
+  background: var(--secondary-bg);
+  border-radius: 10px;
+  padding: 17px;
+  width: 100%;
+  height: 826px;
+  overflow: hidden;
+  margin-bottom: 17px;
+  max-width: 1440px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 570px;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.map {
+  width: calc(100% - 35px) !important;
+  height: 792px !important;
+  border-radius: 10px !important;
+  max-width: 1440px;
+
+  @media (max-width: 768px) {
+    width: calc(100% - 25px) !important;
+    height: 546px !important;
+    border-radius: 8px !important;
+  }
+}
+
+.invalid {
+  border: 1px solid red !important;
+}
+
+.discord-loader {
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-left: -20px;
+  }
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+}
+
+.sign-up-form {
+  .error-text {
+    display: block;
+    margin-bottom: 12px;
+  }
+}
